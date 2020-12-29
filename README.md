@@ -2,16 +2,16 @@
 
 ## Nedir?
 
-Kalite, bir mal veya hizmetin, önceden belirlenmiş ihtiyaç ve beklentileri karşılayacak özelliklerinin bütünüdür. (ISO-9001 Kalite Sözlüğü)
+> Kalite, bir mal veya hizmetin, önceden belirlenmiş ihtiyaç ve beklentileri karşılayacak özelliklerinin bütünüdür. (ISO-9001 Kalite Sözlüğü)
 
 "Üretim kalitesi"nden kasıt, üretim tekrar edilirken veya geliştirilirken ortaya çıkabilecek her türlü problemin baştan öngörülmesi ve bunlara karşı önlem alınmasıdır. 
 
 ### Tekrar eden üretimde çıkabilecek problemler
 
-Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu düşünelim. Üretimin tamamlanmasından 1 yıl sonra aynı üründen isteniyor olsun. Kalite tanımına dönersek, hem müşterinin şirket sahibinin beklentisi, son üretimi dün yapmış gibi rahatça üretimi yapabilmektir. Bu beklentiyi karşılamadaki problemler şunlardır: 
+Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu düşünelim. Üretimin tamamlanmasından 1 yıl sonra aynı üründen isteniyor olsun. Kalite tanımına dönersek, hem müşterinin hem şirket sahibinin beklentisi son üretim dün yapılmış gibi sorunsuzca üretim yapılmasıdır. Bu beklentiyi karşılamadaki problemler şunlardır: 
 
 1. Ürünle ilgili üretim dosyaları nerede? Ürünün bir kodu var mıydı?
-2. Ürünle ilgili dosyaların olması gereken yer bulundu (sunucu/projeler/ürün-1), peki dosyalar burada mı, yoksa 6 ay önce o projeyle ilgilenen mühendisin bilgisayarı çalındığı için kayıp mı oldu? Yedekleri var mıydı? 
+2. Ürünle ilgili dosyaların olması gereken yer bulundu (`sunucu/projeler/ürün-b3871a6`), peki dosyalar burada mı, yoksa 6 ay önce o projeyle ilgilenen mühendisin bilgisayarı çalındığı için kayıp mı oldu? Yedekleri var mıydı? Var olan yedekler son (güncel) yedekler miydi?
 3. Dosyalar bulundu. Bu üretimin yapılması için 300 tane parça 20 ayrı yerden sipariş ediliyordu, 400 ayrı işlem adımı vardı. Bunlar neydi? Hiçbirini hatırlamıyoruz. Belki de bu işi şirkete 3 ay önce girmiş bir çalışan icra edecek, dolayısıyla eskiye dair hiçbir bilgisi olmayacak. Bu kişi bu işe nereden başlayacağını nereden bilecek? 
 4. İşe başlandı. 
     1. Yazılım:
@@ -19,7 +19,7 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
         2. Kullandığımız kütüphaneler güncellenmiş ve bizim eski kodumuzla artık uyumlu değil. O tarihteki kütüphaneleri nereden bulacağız? Bazıları sitesinden kaldırılmış. 
         3. Tüm kütüphaneleri ve derleyicileri bulduk. Hangi komutlarla derliyorduk? 
         4. Derleme tamamlandı. Hangi fiziksel bağlantıları yaparak yazılımı cihaza yüklüyorduk?
-        5. Doğru çalıştığını nasıl test ediyorduk? 
+        5. Doğru çalıştığını nasıl test ediyorduk? Hangi test araçlarını kullanıyorduk? O test araçları şu an bu projede kullanmaya müsait mi, yoksa şu an başka bir projede mi kullanılıyor? Ya da bozulmuştu da şu an tamirde mi, hatta tamirde bile değil mi, tamirin tamamlanması ne kadar sürer? Bu durumdan şimdi mi haberimiz oldu, başta süre verirken biliyor muyduk? Süre sıkıntısına düşersek testleri yapmayacak mıyız? Testleri yapmazsak teslim ettiğimiz ürünlerin kalitesini nasıl ölçeceğiz?
     2. Elektronik donanım:
         1. Malzeme listesini bulabiliyor muyuz, yoksa o tarihteki e-posta yazışmalarından mı bulmamız gerekiyor? Malzemelerin bir kısmını kağıtlara mı yazmıştık?
         2. Malzeme listesindeki bir malzemeyi bulamıyoruz, üretimden kalkmış. Onun yerine muadil eleman kullanacağız. Önceki seçtiğimizle uyumlu olacağını nasıl garanti edeceğiz? O tarihte elemanı seçerken hangi kriterlere dikkat etmiştik, hangi parametreleri bizim için önemliydi? (bkz. [Malzeme listesinde üretici kodunun önemi (İng.)](https://electronics.stackexchange.com/q/539726/20285))
@@ -32,18 +32,27 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
     
 ### Ürün geliştirilirken karşılaşılan sorunlar
 
-Problem: Bir otomobil üretmiştik. Müşteri tavanın 10cm daha yüksek olmasını, böylece aracın daha ferah olmasını istiyor. Bunun bize getireceği maliyeti hesaplarken: 
+Üretimde yaşanan problemlerin yanısıra geliştirmede şu problemler yaşanır: 
 
-   * Bu maliyeti hesaplamanın maliyeti en az olmalıdır. 
-   * Bu hesabı yaparken hata yaparsak sorumluluk bize ait olacağından çıkan ek masrafları bizim karşılamamız gerekir. Hata yapmamalıyız. 
+1. Maliyet hesaplama, işgücü belirleme ve iş parçalarının doğru belirlenmesi:
+    Problem: Bir otomobil üretmiştik. Müşteri tavanın 10cm daha yüksek olmasını, böylece aracın daha ferah olmasını istiyor. Bunun müşteriye getireceği maliyeti hesaplarken: 
 
-Bu nedenle, projenin tasarım dökümanlarının elektronik ortamda ve doğru proje yönetim aracı altında mevcut olması gerekir. Şu ana başlığın altındaki tüm kalemler, alakalı olduğu başlığın altındaki alakalı olduğu hususa atıfta bulunmalıdır:
-1. Tasarım gereksinimleri: Bu ürünün hangi özellikleri olmalı? 
-2. Tasarım kararları: Neler yaparsak bu tasarım gereksinimlerini yerine getiririz?
-3. Test prosedürleri: Hangi tasarım kararlarını hangi testlerden geçirmeliyiz?
+      * Maliyeti hesaplamanın maliyeti en az olmalıdır. Maliyet hesaplamaya ayrılan işgücü her zaman kısıtlıdır, bu nedenle hataya mahal verir.
+      * Maliyet hesabı yaparken hata yaparsak sorumluluk bize ait olacağından çıkan ek masrafları bizim karşılamamız gerekir. Hata yapmamalıyız. 
 
-(DEVAM EDİLECEKTİR)
-  
-# Dökümantasyonun ve dökümantasyon araçlarının seçiminin önemi 
+    Bu nedenle, projenin tasarım dökümanlarının elektronik ortamda ve doğru proje yönetim aracı altında mevcut olması gerekir. Şu ana başlığın altındaki tüm kalemler, alakalı olduğu başlığın altındaki alakalı olduğu hususa atıfta bulunmalıdır:
+    1. Tasarım gereksinimleri: Bu ürünün hangi özellikleri olmalı? 
+    2. Tasarım kararları: Neler yaparsak bu tasarım gereksinimlerini yerine getiririz?
+    3. Test prosedürleri: Hangi tasarım kararlarını hangi testlerden geçirmeliyiz?
+    
+2. Sürekli yedekleme: Çalışanlardan birinin bilgisayarının çalışmalar esnasında çökmesi, çalınması, virüs nedeniyle verilerin bozulması veya yanlışlıkla silinmesi durumunda üretim süreci ciddi zarar görecektir. Çalışanların verileri ne sıklıkla, hangi maliyetle ve ne seviyede yedeklenmektedir? 
+    1. Yedekleme seviyesi: Diski çöken bir çalışan yedeklediği dosyalara ulaşsa bile ihtiyaç duyduğu programları kurması ve sistemini tekrar çalışabileceği hale getirmesi için kaç saat (genellikle "gün") kurulum yapacak, tekrar ne zaman kaldığı yerden çalışmaya başlayabilecektir? Bu çalışanın bu zaman kaybı esnasında ekip ne kadar yavaşlayacaktır veyahut duracak mıdır? 
+    2. Yedekleme sıklığı: Yedeklerine dönen çalışan kaç saatlik çalışmayı kaybetmiş olacaktır? Bu kaybı kaç saat çalışarak telafi edecektir?
+    3. Yedekleme maliyeti: Yedekleme işlemi ne kadar sürmektedir, bu süreçte çalışan ne kadar süreyle işini yapamamaktadır? Yedekleme maliyetleri ağırsa çalışan yedeklemeyi es geçmek isteyecektir. Benzer şekilde yedekleme işlemi iyi bir internet bağlantısına ihtiyaç duyuyorsa sahada her zaman iyi internet bağlantısı olmaz. Bu esnalarda yedek alınamayacak mıdır? 
+    4. Yedeklere dönüş: İnternet bağlantısına ihtiyaç duyan bir yedekleme altyapısında, internet bağlantısının kötü olduğu veya hiç olmadığı bir yerde yedeklere dönme ihtiyacı hissedilirse ne yapılacaktır?
+        
+# Dökümantasyonun ve araç gereç seçiminin önemi 
 
 [<img src="http://i3.ytimg.com/vi/bYNEdhxP6U0/hqdefault.jpg" width="50%" />](https://youtu.be/bYNEdhxP6U0)
+
+Doğru araçlar kullanılmazsa ve/veya yeteri kadar pratik yapılmazsa birimler arasındaki iletişim çok uzar ve verimsiz olur. Yukarıda komedisi yapılan durum gerçek işlerde sıklıkla (çok sıklıkla) yaşanmaktadır. Üretim esnasında ortaya çıkan böylesi değişiklikleri hangi yöntemleri izleyerek uygularsak yaptığımız değişiklikleri zaman maliyeti eklemeksizin belgelendirmeye dahil eder, aynı zamanda belirlenmiş test prosedürlerimizden de geçiririz? 
