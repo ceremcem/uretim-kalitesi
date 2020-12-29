@@ -41,9 +41,9 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
       * Maliyeti hesaplamanın maliyeti en az olmalıdır. Maliyet hesaplamaya ayrılan işgücü her zaman kısıtlıdır, bu nedenle hataya mahal verir.
       * Maliyet hesabı yaparken hata yaparsak sorumluluk bize ait olacağından çıkan ek masrafları bizim karşılamamız gerekir. Hata yapmamalıyız. 
 
-    Bu nedenle, projenin tasarım dökümanlarının elektronik ortamda ve doğru proje yönetim aracı altında mevcut olması gerekir. Şu ana başlığın altındaki tüm kalemler, alakalı olduğu başlığın altındaki alakalı olduğu hususa atıfta bulunmalıdır:
-    1. Tasarım gereksinimleri: Bu ürünün hangi özellikleri olmalı? 
-    2. Tasarım kararları: Neler yaparsak bu tasarım gereksinimlerini yerine getiririz?
+    Bu nedenle, projenin tasarım dökümanlarının elektronik ortamda ve doğru proje yönetim aracı altında mevcut olması gerekir. Tasarım dökümanları 3 ana başlıkta toplanır:
+    1. Tasarım gereksinimleri: Bu ürünün hangi özellikleri olmalı? (Şartname)
+    2. Tasarım kararları: Neler yaparsak bu tasarım gereksinimlerini yerine getiririz? (Ekleyeceğimiz hangi unsur hangi şartname maddelerini karşılıyor?)
     3. Test prosedürleri: Hangi tasarım kararlarını hangi testlerden geçirmeliyiz?
     
 2. Sürekli yedekleme: Çalışanlardan birinin bilgisayarının çalışmalar esnasında çökmesi, çalınması, virüs nedeniyle verilerin bozulması veya yanlışlıkla silinmesi durumunda üretim süreci ciddi zarar görecektir. Çalışanların verileri ne sıklıkla, hangi maliyetle ve ne seviyede yedeklenmektedir? 
