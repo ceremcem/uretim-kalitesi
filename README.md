@@ -32,9 +32,10 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
     
 ### Ürün geliştirilirken karşılaşılan sorunlar
 
-Üretimde yaşanan problemlerin yanısıra geliştirmede şu problemler yaşanır: 
+Üretimde yaşanan problemlerin yanısıra geliştirmede şu problemler de yaşanır: 
 
 1. Maliyet hesaplama, işgücü belirleme ve iş parçalarının doğru belirlenmesi:
+
     Problem: Bir otomobil üretmiştik. Müşteri tavanın 10cm daha yüksek olmasını, böylece aracın daha ferah olmasını istiyor. Bunun müşteriye getireceği maliyeti hesaplarken: 
 
       * Maliyeti hesaplamanın maliyeti en az olmalıdır. Maliyet hesaplamaya ayrılan işgücü her zaman kısıtlıdır, bu nedenle hataya mahal verir.
@@ -50,6 +51,13 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
     2. Yedekleme sıklığı: Yedeklerine dönen çalışan kaç saatlik çalışmayı kaybetmiş olacaktır? Bu kaybı kaç saat çalışarak telafi edecektir?
     3. Yedekleme maliyeti: Yedekleme işlemi ne kadar sürmektedir, bu süreçte çalışan ne kadar süreyle işini yapamamaktadır? Yedekleme maliyetleri ağırsa çalışan yedeklemeyi es geçmek isteyecektir. Benzer şekilde yedekleme işlemi iyi bir internet bağlantısına ihtiyaç duyuyorsa sahada her zaman iyi internet bağlantısı olmaz. Bu esnalarda yedek alınamayacak mıdır? 
     4. Yedeklere dönüş: İnternet bağlantısına ihtiyaç duyan bir yedekleme altyapısında, internet bağlantısının kötü olduğu veya hiç olmadığı bir yerde yedeklere dönme ihtiyacı hissedilirse ne yapılacaktır?
+    
+3. Birbirini etkileyen değişiklikler: 
+
+    1. Devredeki filtrenin değerini arttırmak için kondansatörü büyütmeye karar verdik. Meğer bu değişikliğimiz nedeniyle kutuya sığmayacakmış. Bunu ne zaman fark ettik? Bu durum mevcut piyasada sıklıkla üretimden sonra fark edilir. 
+    2. Mekanik olarak bir değişiklik yaptık ve devrenin 3 boyutlu modelini hesaba kattığımızda yeni çıkıntımız devreye dokunmuyor. Harika. Peki kaçak kapasitansları etkileyip etkilemediğini, elektriksel güvenlik için konan mesafeleri ihlal edip etmediğini nereden biliyoruz? Bunu nihai testler esnasında mı öğreneceğiz, yoksa elektronik tasarım bölümüne zamanında haber verilmiş miydi? 
+    
+(DEVAM EDECEK)
         
 # Dökümantasyonun ve araç gereç seçiminin önemi 
 
