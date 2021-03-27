@@ -63,4 +63,6 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
 
 [<img src="http://i3.ytimg.com/vi/bYNEdhxP6U0/hqdefault.jpg" width="50%" />](https://youtu.be/bYNEdhxP6U0)
 
-Doğru araçlar kullanılmazsa ve/veya yeteri kadar pratik yapılmazsa birimler arasındaki iletişim çok uzar ve verimsiz olur. Yukarıda komedisi yapılan durum gerçek işlerde sıklıkla (çok sıklıkla) yaşanmaktadır. Üretim esnasında ortaya çıkan böylesi değişiklikleri hangi yöntemleri izleyerek uygularsak yaptığımız değişiklikleri zaman maliyeti eklemeksizin belgelendirmeye dahil eder, aynı zamanda belirlenmiş test prosedürlerimizden de geçiririz? 
+Doğru araçlar kullanılmazsa ve/veya yeteri kadar pratik yapılmazsa birimler arasındaki iletişim çok ağırlaşır. Yukarıda komedisi yapılan durum gerçekte sıklıkla (çok sıklıkla) yaşanmaktadır. 
+
+Peki üretim esnasında ortaya çıkan böylesi değişiklikleri hangi yöntemleri izleyerek uygularsak o değişiklikleri hem belgelendirmeye zaman maliyeti eklemeksizin dahil edebilir, hem de belirlenmiş test prosedürlerimizden de geçirebiliriz? 
