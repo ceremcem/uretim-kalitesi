@@ -26,7 +26,7 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
         3. Dışarıda ürettireceğimiz parçalarla alakalı üretim notları açıkça bulunuyor mu, yoksa o tarihte tedarikçimize sözlü olarak (ya da yazışırken) söylediğimiz bir ayrıntıyı şimdi söylemeyi unuttuğumuz için hatalı ürün mü alacağız? 
         4. Test prosedürleri neydi? 
     3. Mekanik donanım:
-        1. Kaynak veya büküm işi var mıydı? Bu işlemlerde aparat kullanıyor muyduk? Kullanıyorduysak bu aparatlar şu an nerede? Bulamıyorsak bunları yeniden üretmek için gerekli belgeler mevcut mu? Eğer aparatları yeniden üreteceksek bunlar ek maliyet getirecek, müşterinin siparişini onaylarken bu durumu hesaba katmış mıydık?
+        1. Kaynak veya büküm işi var mıydı? Bu işlemlerde aparat kullanıyor muyduk? Kullanıyor idiysek bu aparatlar şu an nerede? Bulamıyorsak bunları yeniden üretmek için gerekli belgeler mevcut mu? Eğer aparatları yeniden üreteceksek bunlar ek maliyet getirecek, müşterinin siparişini onaylarken bu durumu hesaba katmış mıydık?
         2. Tasarım dosyalarından üretilen imalat dosyaları (örn. 3D çizimden üretilen GCode dosyaları) tedarikçinin tarafında, kendi CNC makinasına göre oluşturulur/oluşturulabilir. Tedarikçinin tarafında üretilen dosyaları almış mıydık? Üretici aynı üretim dosyalarımızdan GCode üretirken yine hata olabilir, bunu kontrol edebilecek durumda mıyız?
     
     
