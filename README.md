@@ -27,7 +27,7 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
         4. Test prosedürleri neydi? 
     3. Mekanik donanım:
         1. Kaynak veya büküm işi var mıydı? Bu işlemlerde aparat kullanıyor muyduk? Kullanıyorduysak bu aparatlar şu an nerede? Bulamıyorsak bunları yeniden üretmek için gerekli belgeler mevcut mu? Eğer aparatları yeniden üreteceksek bunlar ek maliyet getirecek, müşterinin siparişini onaylarken bu durumu hesaba katmış mıydık?
-        2. Üretim dökümanlarından üretilen imalat dosyaları (örn. GCode dosyaları) tedarikçinin tarafında, kendi CNC makinasına göre oluşturulur/oluşturulabilir. Tedarikçinin tarafında üretilen dosyaları almış mıydık? Üretici aynı üretim dosyalarımızdan GCode üretirken yine hata olabilir, bunu kontrol edebilecek durumda mıyız?
+        2. Tasarım dosyalarından üretilen imalat dosyaları (örn. 3D çizimden üretilen GCode dosyaları) tedarikçinin tarafında, kendi CNC makinasına göre oluşturulur/oluşturulabilir. Tedarikçinin tarafında üretilen dosyaları almış mıydık? Üretici aynı üretim dosyalarımızdan GCode üretirken yine hata olabilir, bunu kontrol edebilecek durumda mıyız?
     
     
 ### Ürün geliştirilirken karşılaşılan sorunlar
@@ -41,7 +41,7 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
       * Maliyeti hesaplamanın maliyeti en az olmalıdır. Maliyet hesaplamaya ayrılan işgücü her zaman kısıtlıdır, bu nedenle hataya mahal verir.
       * Maliyet hesabı yaparken hata yaparsak sorumluluk bize ait olacağından çıkan ek masrafları bizim karşılamamız gerekir. Hata yapmamalıyız. 
 
-    Bu nedenle, projenin tasarım dökümanlarının elektronik ortamda ve doğru proje yönetim aracı altında mevcut olması gerekir. Tasarım dökümanları 3 ana başlıkta toplanır:
+    Bu nedenle, projenin tasarım belgelerinin elektronik ortamda ve doğru proje yönetim aracı altında mevcut olması gerekir. Tasarım belgeleri 3 ana başlıkta toplanır:
     1. Tasarım gereksinimleri: Bu ürünün hangi özellikleri olmalı? (Şartname)
     2. Tasarım kararları: Neler yaparsak bu tasarım gereksinimlerini yerine getiririz? (Ekleyeceğimiz hangi unsur hangi şartname maddelerini karşılıyor?)
     3. Test prosedürleri: Hangi tasarım kararlarını hangi testlerden geçirmeliyiz?
@@ -58,7 +58,7 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
     2. Mekanik olarak bir değişiklik yaptık ve devrenin 3 boyutlu modelini hesaba kattığımızda yeni çıkıntımız devreye dokunmuyor. Harika. Peki kaçak kapasitansları etkileyip etkilemediğini, elektriksel güvenlik için konan mesafeleri ihlal edip etmediğini nereden biliyoruz? Bunu nihai testler esnasında mı öğreneceğiz, yoksa elektronik tasarım bölümüne zamanında haber verilmiş miydi? 
     3. Yazılımlarımızı modüller halinde yapmıştık. Böylece tekrar kullanılabilir parçaları farklı projelerimizde kullanabilmiştik. Bir başka projede, bu projede kullandığımız modüllerden birini geliştirmiştik. Fakat yaptığımız geliştirme şu an bu projenin çalışmamasına neden oluyor. Son çalışan versiyona nasıl dönebiliriz?
             
-# Dökümantasyonun ve araç gereç seçiminin önemi 
+# Belgelendirmenin ve araç gereç seçiminin önemi 
 
 [<img src="http://i3.ytimg.com/vi/bYNEdhxP6U0/hqdefault.jpg" width="50%" />](https://youtu.be/bYNEdhxP6U0)
 
