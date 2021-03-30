@@ -56,9 +56,8 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
 
     1. Devredeki filtrenin değerini arttırmak için kondansatörü büyütmeye karar verdik. Meğer bu değişikliğimiz nedeniyle kutuya sığmayacakmış. Bunu ne zaman fark ettik? Bu durum mevcut piyasada sıklıkla üretimden sonra fark edilir. 
     2. Mekanik olarak bir değişiklik yaptık ve devrenin 3 boyutlu modelini hesaba kattığımızda yeni çıkıntımız devreye dokunmuyor. Harika. Peki kaçak kapasitansları etkileyip etkilemediğini, elektriksel güvenlik için konan mesafeleri ihlal edip etmediğini nereden biliyoruz? Bunu nihai testler esnasında mı öğreneceğiz, yoksa elektronik tasarım bölümüne zamanında haber verilmiş miydi? 
-    
-(DEVAM EDECEK)
-        
+    3. Yazılımlarımızı modüller halinde yapmıştık. Böylece tekrar kullanılabilir parçaları farklı projelerimizde kullanabilmiştik. Bir başka projede, bu projede kullandığımız modüllerden birini geliştirmiştik. Fakat yaptığımız geliştirme şu an bu projenin çalışmamasına neden oluyor. Son çalışan versiyona nasıl dönebiliriz?
+            
 # Dökümantasyonun ve araç gereç seçiminin önemi 
 
 [<img src="http://i3.ytimg.com/vi/bYNEdhxP6U0/hqdefault.jpg" width="50%" />](https://youtu.be/bYNEdhxP6U0)
@@ -66,3 +65,21 @@ Bir ürünün elektronik, yazılımsal ve mekanik kısımlarının olduğunu dü
 Doğru araçlar kullanılmazsa ve/veya yeteri kadar pratik yapılmazsa birimler arasındaki iletişim çok ağırlaşır. Yukarıda komedisi yapılan durum gerçekte sıklıkla (çok sıklıkla) yaşanmaktadır. 
 
 Peki üretim esnasında ortaya çıkan böylesi değişiklikleri hangi yöntemleri izleyerek uygularsak o değişiklikleri hem belgelendirmeye zaman maliyeti eklemeksizin dahil edebilir, hem de belirlenmiş test prosedürlerimizden de geçirebiliriz? 
+
+# Çözümler 
+
+Nasıl ki farklı işler yaparken giyilen kıyafetler farklı olmalıysa, nasıl ki her iş kendine özel düzenlenmiş mekan gerektiriyorsa, her proje ekibi kendi araç gerecini belirlemelidir. "En doğru" sistem diye bir şey yoktur, "maliyeti (zaman, para, işgücü) en uygun" sistem diye bir şey vardır. 
+
+1. Kodlar sürümlenmelidir. Bunun için dağınık kod sürümleme sistemleri (örn. Git) kullanılır.
+2. Tüm proje sürümlenmelidir. Her bir derleme esnasında derleyicinin ve işlemde kullanılan tüm programların versiyonları otomatik olarak not alınmalıdır. Daha iyisi, Docker, LXC, VirtualBox ya da benzeri bir altyapı aracılığıyla tüm gereksinimler biraraya toplanmalı, tüm akış her zaman tekrar edilebilir kılınmalıdır. 
+3. Yazılım ve donanımlar için test prosedürleri oluşturulmalıdır. (bkz. Test Driven Development)
+4. İş akışları yönerge haline getirilmelidir. Yönergeler çok ayrıntılı olamaz, çok ayrıntılı olursa okunur olmazlar. Yeterince mesai harcanarak mümkün olduğunca kısaltılmalıdır. Yönergeler hem fiziken basılı hem de elektronik ortamda bulunmalıdır. 
+5. Devre şemalarında malzeme listelerinin yanısıra o devre şemasının hangi marka/model malzemelerle yapıldığı ayrıca bilgi olarak yazılmalıdır. 
+6. Tüm yazışmalar yazılı olarak yapılmalı, sözlü yapılan görüşmeler yazıya dökülerek teyitleşilmelidir. Projeye verilmiş olan proje kodu mutlaka konuya eklenmelidir. Böylece daha sonradan o projeyle ilgili yazışmalar aramalarda bulunabilir. Konu kısmına proje kodu eklenmeden yazışma yapılamaması için uygun mekanizmalar bulunmalıdır.
+7. Oluşturulan iş akışlarında "acele etmek" değil, "zamandan tasarruf etmek" değil "hataya mahal vermemek" amaçlanmalıdır. Unutulmamalıdır ki aslında en hızlı iş, en az hatayla yürüyen akışla yapılır. 
+8. Büyük çaplı projelerde "Proje Gereksinim Yönetim Sistemi" kullanılmalıdır. (bkz. IBM DOORS)
+
+# Vurgulanan Noktalar
+
+1. İşbu belge "Test driven development" mantığı ile yazılmıştır. Bahsedilen "sorunlar", "test maddeleri" olarak kabul edilebilir. Ekibin tercih ettiği yöntemler kombinasyonu değiştikçe ve geliştikçe, "hala yukarıdaki isteklere yanıt verebiliyor mu" diye kontrol edilebilir. 
+2. İşbu belge Git kullanılarak sürümlenmiştir. Böylelikle sonradan yapılacak değişiklik ve iyileştirmeler takip edilebilir kılınmıştır. 
